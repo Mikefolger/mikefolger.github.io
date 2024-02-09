@@ -122,17 +122,17 @@
     <button type="submit">Send</button>
   </form>
 
-  <div class="paypal-form">
-    <form action="https://www.paypal.com/cgi-bin/webscr?cmd=_cart&business=boomermurder@gmail.com&display=1"
-      method="post">
-      <input type="hidden" name="cmd" value="_xclick">
-      <input type="hidden" name="business" value="boomermurder@gmail.com">
-      <input type="hidden" name="item_name" value="Liquid Rocket Engine Model 1">
-      <input type="hidden" name="amount" value="400">
-      <input type="hidden" name="currency_code" value="USD">
-      <input type="submit" value="Buy Now">
-    </form>
-  </div>
+  <form action="https://www.paypal.com/cgi-bin/webscr?cmd=_cart&business=boomermurder@gmail.com&display=1"
+    method="post">
+    <!-- Replace YOUR_PAYPAL_CHECKOUT_URL with your actual PayPal checkout URL -->
+    <input type="hidden" name="cmd" value="_xclick">
+    <input type="hidden" name="business" value="boomermurder@gmail.com">
+    <!-- Replace YOUR_PAYPAL_EMAIL with your actual PayPal email address -->
+    <input type="hidden" name="item_name" value="Liquid Rocket Engine Model 1">
+    <input type="hidden" name="amount" value="999.99">
+    <input type="hidden" name="currency_code" value="USD">
+    <input type="submit" value="Buy Now">
+  </form>
 
 </body>
 
