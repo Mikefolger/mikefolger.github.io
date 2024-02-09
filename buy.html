@@ -2,14 +2,42 @@
 <html lang="en">
 
 <head>
-  <b>Rocket Fluid</b>
-  <p>I know this is sketch but enter you email, address, and zip. Then click the back button and purchase it.</p>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RocketFluid</title>
+  <link rel="stylesheet" href="styles.css">
+
   <style>
     body {
+      font-family: Arial, sans-serif;
       background-color: deepskyblue;
+      margin: 0;
+      padding: 20px;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #0074cc;
+      overflow: hidden;
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #00509e;
     }
 
     img {
@@ -18,42 +46,91 @@
       float: left;
       margin-right: 10px;
     }
-  </style>
 
-  <img src="rocket-image.png" />
-  <div>
-    <title>RocketFluid</title>
-  </div>
-  <link rel="stylesheet" href="styles.css">
+    form {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: white;
+      padding: 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .paypal-form {
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 
+<body>
 
-<form action="https://formspree.io/f/mayrezjz" method="POST">
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your Address:
-    <textarea name="Address"></textarea>
-  </label>
-  <label>
-    Your Zip:
-    <textarea name="Zip Code"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
+  <header>
+    <img src="rocket-image.png" alt="Rocket Icon" />
+    <b>Rocket Fluid</b>
+    <p>I know this is sketch, but enter your email, address, and zip. Then click the back button and purchase it.</p>
+  </header>
 
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="journal.html">Journal</a>
+    <a href="email.html">Contact Us!</a>
+  </nav>
 
+  <form action="https://formspree.io/f/mayrezjz" method="POST">
+    <label>
+      Your Email:
+      <input type="email" name="email" required>
+    </label>
+    <label>
+      Your Address:
+      <textarea name="address" required></textarea>
+    </label>
+    <label>
+      Your Zip Code:
+      <input type="text" name="zip_code" required>
+    </label>
+    <button type="submit">Send</button>
+  </form>
 
-<form action="https://www.paypal.com/cgi-bin/webscr?cmd=_cart&business=boomermurder@gmail.com&display=1" method="post">
-  <!-- Replace YOUR_PAYPAL_CHECKOUT_URL with your actual PayPal checkout URL -->
-  <input type="hidden" name="cmd" value="_xclick">
-  <input type="hidden" name="business" value="boomermurder@gmail.com">
-  <!-- Replace YOUR_PAYPAL_EMAIL with your actual PayPal email address -->
-  <input type="hidden" name="item_name" value="Liquid Rocket Engine Model 1">
-  <input type="hidden" name="amount" value="999.99">
-  <input type="hidden" name="currency_code" value="USD">
-  <input type="submit" value="Buy Now">
-</form>
+  <div class="paypal-form">
+    <form action="https://www.paypal.com/cgi-bin/webscr?cmd=_cart&business=boomermurder@gmail.com&display=1"
+      method="post">
+      <input type="hidden" name="cmd" value="_xclick">
+      <input type="hidden" name="business" value="boomermurder@gmail.com">
+      <input type="hidden" name="item_name" value="Liquid Rocket Engine Model 1">
+      <input type="hidden" name="amount" value="999.99">
+      <input type="hidden" name="currency_code" value="USD">
+      <input type="submit" value="Buy Now">
+    </form>
+  </div>
+
+</body>
+
+</html>

@@ -2,36 +2,61 @@
 <html lang="en">
 
 <head>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rocket Fluid Engines</title>
+  <title>FutureTech Rocket Engines - Products</title>
   <style>
+    /* Your styles here */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: deepskyblue;
+      background-color: #f4f4f4;
     }
 
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
 
+    nav {
+      background-color: #0074cc;
+      overflow: hidden;
+    }
 
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
 
+    nav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
 
     section {
       margin: 20px;
     }
 
-    h1 {
+    h2 {
       color: #333;
     }
 
-    p {
-      color: #666;
+    .product {
+      border: 1px solid #ddd;
+      padding: 20px;
+      margin-bottom: 20px;
+      background-color: #fff;
     }
 
     footer {
-      background-color: deepskyblue;
+      background-color: #333;
       color: white;
       text-align: center;
       padding: 1em;
@@ -45,29 +70,31 @@
 <body>
 
   <header>
-    <h1>Welcome to Rocket Fluid</h1>
+    <h1>Welcome to FutureTech Rocket Engines</h1>
     <p>Your Gateway to Cutting-Edge Liquid Rocket Propulsion</p>
   </header>
 
-  <nav class="nav-bar">
+  <nav>
     <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="journal.html">Journal</a>
-    <a href="email.html">Contact Us!</a>
     <a href="products.html">Products</a>
-
+    <a href="contact.html">Contact</a>
+    <!-- Add more navigation links as needed -->
   </nav>
+
   <section>
-    <h2>Exciting Products Coming Soon!</h2>
-    <p>We are working tirelessly to bring you the most advanced liquid rocket engines. Stay tuned for updates on our
-      upcoming products that will redefine space exploration.</p>
-    <p>Follow us on social media for the latest news and announcements:</p>
-    <p>add links here</p>
+    <h2>Products for Sale</h2>
 
+    <div class="product">
+      <h3>Liquid Rocket Engine Model 1</h3>
+      <p>Description: Advanced liquid rocket engine for space exploration.</p>
+      <p>Price: $999.99</p>
+      <a href="buy.html" class="button-link">Buy engine</a>
+    </div>
 
-
-    <footer>
-      <p>&copy; 2024 Rocket Fluid. All rights reserved.</p>
-    </footer>
+    <!-- Add more product entries as needed -->
 
   </section>
+
+  <footer>
+    <p>&copy; 2024 FutureTech Rocket Engines. All rights reserved.</p>
+  </footer>
