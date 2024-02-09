@@ -91,7 +91,6 @@
 <body>
 
   <header>
-    <img src="rocket-image.png" alt="Rocket Icon" />
     <b>Rocket Fluid</b>
     <p>I know this is sketch, but enter your email, address, and zip. Then click the back button and purchase it.</p>
   </header>
@@ -114,7 +113,11 @@
     </label>
     <label>
       Your Zip Code:
-      <input type="text" name="zip_code" required>
+      <input type="text" name="zip_code">
+    </label>
+    <label>
+      Your Message:
+      <input type="text" name="message" required>
     </label>
     <button type="submit">Send</button>
   </form>
@@ -125,7 +128,7 @@
       <input type="hidden" name="cmd" value="_xclick">
       <input type="hidden" name="business" value="boomermurder@gmail.com">
       <input type="hidden" name="item_name" value="Liquid Rocket Engine Model 1">
-      <input type="hidden" name="amount" value="999.99">
+      <input type="hidden" name="amount" value="400">
       <input type="hidden" name="currency_code" value="USD">
       <input type="submit" value="Buy Now">
     </form>
